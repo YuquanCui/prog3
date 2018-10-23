@@ -129,6 +129,7 @@ function setupShaders() {
     var vShaderCode = `
         attribute vec3 vertexPosition;
         uniform mat4 uModelMatrix; // the model matrix
+
         void main(void) {
             gl_Position = uModelMatrix * vec4(vertexPosition, 1.0);
         }
